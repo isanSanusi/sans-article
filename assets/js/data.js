@@ -62,6 +62,14 @@ const Icons = [
     <path fill-rule="evenodd" d="M12 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8Zm-2 9a4 4 0 0 0-4 4v1c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2v-1a4 4 0 0 0-4-4h-4Z" clip-rule="evenodd"/>
   </svg>`,
   },
+  {
+    id: 5,
+    name: "Portofolio",
+    link: "#portofolio",
+    svg: `<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+    <path fill-rule="evenodd" d="M12 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8Zm-2 9a4 4 0 0 0-4 4v1c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2v-1a4 4 0 0 0-4-4h-4Z" clip-rule="evenodd"/>
+  </svg>`,
+  },
 ];
 const targetElement = [
   { target: ".main_header", placement: "appendChild" },
@@ -187,6 +195,36 @@ const showMyJourney = () => {
   });
 };
 showMyJourney();
+
+
+const dataGallery = [
+  { 
+    title: 'Agro Feed', 
+    imageUrl: 'assets/img/gallery/logo pakan 2.png',
+    imageDescription: 'logo vector untuk UMK pakan ternak di bandung'
+  },
+];
+
+const myPorto = () => {
+  const gallery = document.getElementById("gallery");
+
+  dataGallery.forEach(item => {
+    const card = document.createElement('div');
+    card.className = 'cardsGallery';
+    card.innerHTML = `
+    <div class="gallery_img">
+    <img src="${item.imageUrl}" alt="${item.imageDescription}">
+    </div>
+    <h3 class="gallery_title">${item.title}</h3>
+      <p class="gallery_description">${item.imageDescription}</p>
+    `;
+    gallery.appendChild(card);
+  });
+}
+
+myPorto();
+
+
 
 const footers = () => {
   const footerContent = `<h4>created with <span>&hearts;</span> by Sandi Hadiansyah | &copy; ${new Date().toLocaleDateString(
