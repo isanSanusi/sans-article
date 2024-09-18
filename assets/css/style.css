@@ -531,17 +531,13 @@ svg {
   }
 }
 
-@media screen and (max-width: 1007px) {
+@media screen and (max-width: 1009px) {
   .navbar_desktop ul li:nth-child(5) {
     display: inline;
   }
 
   .navbar_desktop {
     justify-content: center;
-  }
-
-  .navbar_desktop ul {
-    padding-inline: 0;
   }
 
   .navbar_desktop span {
@@ -605,10 +601,17 @@ svg {
   
 }
 
+
 @media screen and (max-width: 650px) {
   .navbar_desktop ul li a {
     height: 100%;
     padding: auto;
+  }
+}
+/* fix bug end */
+@media screen and (max-width: 630px) {
+  .navbar_desktop ul li a {
+    font-size: .85rem;
   }
 }
 

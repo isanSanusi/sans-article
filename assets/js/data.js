@@ -206,6 +206,11 @@ const dataGallery = [
     imageUrl: 'assets/img/gallery/logo pakan 2.png',
     imageDescription: 'logo vector untuk UMK pakan ternak di bandung'
   },
+  { 
+    title: 'Club Logo', 
+    imageUrl: 'assets/img/gallery/motorclublogo.jpg',
+    imageDescription: 'vector logo club motor CDR,PSD,SVG'
+  },
 ];
 
 const myPorto = () => {
